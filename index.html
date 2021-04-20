@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Actual title of a tab in web browser (Keep under 60 character long) You should always have a unique title tag on every page that describes the page.-->
+    <!-- <title>Solitude is your way to Happy Life, More Money and Web Development!</title> -->
+    <title>Ivan Uskov's Diary | Solitude</title>
+    <!-- Meta content type – This tag is necessary to declare your character set for the page and should be present on every page. Leaving this out could impact how your page renders in the browser. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Meta description – The infamous meta description tag is used for one major purpose: to describe the page to searchers as they read through the SERPs. This tag doesn't influence ranking, but it's very important regardless. It's the ad copy that will determine if users click on your result. Keep it within 160 characters, and write it to catch the user's attention. Sell the page — get them to click on the result. Here's a great article on meta descriptions that goes into more detail.  -->
+    <meta name="description" content="I'M SELLING THE PAGE FREE GET IT RIGHT NOW">
+    <!-- Viewport – In this mobile world, you should be specifying the viewport. If you don’t, you run the risk of having a poor mobile experience. -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- This tag is used to name the author of the page. It's just not necessary on the page. -->
+    <meta name="author" content="Ivan Uskov">
+    <!-- Changing upper header color or theme of the page -->
+    <meta name="theme-color" content="#ff2a6b">
+    <!-- Keywords of the page doens't mean much -->
+    <meta name="keywords" content="...">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Extra CSS Plugins -->
+    <link rel="stylesheet" href="scss/aos.css">
+    <link rel="stylesheet" href="scss/hover.css">
+    <link rel="stylesheet" href="scss/cropper.css">
+    <link rel="stylesheet" href="scss/animate.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="scss/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="media/icons/all.min.css">
+    <!-- Extra JS Plugins -->
+    <script defer src="js/aos.js"></script>
+    <script defer src="js/cropper.js"></script>
+    <!-- JS -->
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <main class="__main-wrapper-container">
+      <div class="__left-wrapper-column">
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>Solitude</h1>
+          </nav>
+
+          <main class="__section-person-container">
+            <div class="__person-avatar">
+              <img src="media\uploads\5fe1cedbe37fa.jpeg" alt="Avatar Picture">
+              
+              <div class="__avatar-upload">
+                <i class="fad fa-upload"></i>
+                <input type="file" onchange="__funcCropperModal(this)" title="Upload image">
+              </div>
+            </div>
+
+            <div class="__person-info">
+              <h2>Introduction</h2>
+              <p>My name is Ivan Uskov and this is my blog! I am web developer from Kazakhstan. I have experience in web site design and building, also my major education is mechanical engineering and also I am developing machines and mechanisms.</p>
+            </div> 
+          </main>
+        </section>
+      </div>
+
+      <div class="__right-wrapper-column">
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>Information</h1>
+          </nav>
+
+          <main class="__section-columns-container">
+            <div class="__left-section-column">
+              <section class="__section-main-statistics">
+                <nav class="__section-header">
+                  <h2>Statistics</h2>
+                </nav>
+                
+                <main class="__section-statistics">
+                  <p>This website has been working for 12 months. I have written 72 articles, where the longest article has 712 words in it. Recently written article was created 2 weeks ago at 16:12. Last time I was online 15 days ago at 12:13.</p>
+                </main>
+              </section>
+            </div>
+
+            <div class="__right-section-column">
+              <section class="__section-main-form">
+                <nav class="__section-header">
+                  <h2>Login</h2>
+                </nav>
+
+                <main class="__section-form">
+                  <form class="__login-form" action="..." method="POST">
+                    <label class="__form-label-container" for="login-username">
+                      <span class="__label-icon"><i class="fas fa-user"></i></span>
+                      <div class="__div-input-container">
+                        <span class="__input-icon"></span>
+                        <input type="text" id="login-username" placeholder=" ">
+                        <span class="__input-placer">Login / E-Mail</span>
+                      </div>
+                      <div class="__div-input-message"><i class="fas fa-exclamation-triangle"></i>Wrong Login or Email</div>
+                    </label>
+
+                    <label class="__form-label-container" for="login-password">
+                      <span class="__label-icon"><i class="fas fa-lock"></i></span>
+                      <div class="__div-input-container">
+                        <span class="__input-icon"></span>
+                        <input type="password" id="login-password" placeholder=" ">
+                        <span class="__input-placer">Password</span>
+                      </div>
+                      <div class="__div-input-message"><i class="fas fa-exclamation-triangle"></i>Wrong Password</div>
+                    </label>
+
+                    <label class="__form-label-container" for="login-switch">
+                      <div class="__div-switch-container">
+                        <input type="checkbox" id="login-switch">
+                        <span class="__switch-placer"></span>
+                      </div>
+                      <span class="__label-placer">Remember Me</span>
+                    </label>
+                    
+                    <button type="button"><i class="fas fa-sign-in-alt"></i>Login</button>
+                  </form>
+                </main>
+              </section>
+            </div>
+          </main>
+        </section>
+
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>Articles</h1>
+          </nav>
+
+          <div class="__section-search-container">
+            <div class="__search-header-title" onclick="__funcDisplayAccordion(this)">
+              <h1>Advanced Search</h1>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+  
+            <div class="__search-entire-container">
+              <form action="./" method="POST">
+                <div class="__form-input">
+                  <i class="fas fa-user"></i>
+                  <input type="text" name="search_query" onkeyup="__ajaxSearchQuery(this)" placeholder=" " autocomplete="off">
+                  <span class="__placer">Title</span>
+                  <div class="__input-dropdown">
+                    <menu>
+  
+                    </menu>
+                  </div>
+                </div>
+  
+                <div class="__form-columns">
+                  <div class="__left-column-form">
+                    <div class="__form-select">
+                      <i class="fas fa-list"></i>
+                      <div class="__select-input">
+                        <span class="__placer">Category</span>
+                        <i class="fas fa-caret-down"></i>
+                      </div>
+  
+                      <div class="__select-dropdown">
+                        <menu>
+                          <li>Category</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Problems</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Thoughts</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Knowledge</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Business</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Something</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">Other</li>
+                        </menu>
+                      </div>
+                    </div>
+  
+                    <div class="__form-select">
+                      <i class="far fa-calendar-day"></i>
+                      <div class="__select-input">
+                        <span class="__placer">Day of month</span>
+                        <i class="fas fa-caret-down"></i>
+                      </div>
+  
+                      <div class="__select-dropdown">
+                        <menu>
+                          <li>Day of month</li>
+                          <?php for ($i = 1; $i <= 31; $i++): ?>
+                            <li class="__dropdown-option" onclick="__funcSelectOptions(this)"><?php echo $i ?></li>
+                          <?php endfor; ?>
+                        </menu>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="__right-column-form">
+                    <div class="__form-select">
+                      <i class="far fa-calendar-alt"></i>
+                      <div class="__select-input">
+                        <span class="__placer">Month</span>
+                        <i class="fas fa-caret-down"></i>
+                      </div>
+  
+                      <div class="__select-dropdown">
+                        <menu>
+                          <li>Month</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">January</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">February</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">March</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">April</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">May</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">June</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">July</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">August</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">September</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">October</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">November</li>
+                          <li class="__dropdown-option" onclick="__funcSelectOptions(this)">December</li>
+                        </menu>
+                      </div>
+                    </div>
+  
+                    <div class="__form-select">
+                      <i class="far fa-calendar-star"></i>
+                      <div class="__select-input">
+                        <span class="__placer">Year</span>
+                        <i class="fas fa-caret-down"></i>
+                      </div>
+  
+                      <div class="__select-dropdown">
+                        <menu>
+                          <li>Year</li>
+                          <?php for ($i = 0; $i < 18; $i++): ?>
+                            <li class="__dropdown-option" onclick="__funcSelectOptions(this)"><?php echo date('Y', strtotime('+'.$i.' Year')); ?></li>
+                          <?php endfor; ?>
+                        </menu>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="__form-buttons">
+                  <button type="button"><i class="fas fa-times-circle"></i>Cancel</button>
+                  <button type="submit"><i class="fas fa-search"></i>Search</button>
+                </div>
+  
+              </form>
+            </div>
+          </div>
+
+          <section class="__section-articles-container">
+            <article class="__article-container">
+              <nav class="__article-image">
+                <img src="https://images.unsplash.com/photo-1570701123784-2d41777f5e93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Article Image">
+                <small>Problems</small>
+              </nav>
+
+              <main class="__article-title">
+                <h2>Making Design For Myself</h2>
+              </main>
+
+              <footer class="__article-footer">
+                <p>20 April 2020, 15:14</p>
+                <p>10 Minutes</p>
+              </footer>
+            </article>
+            
+            <article class="__article-container">
+              <nav class="__article-image">
+                <img src="https://images.unsplash.com/photo-1593275276360-c5d41f69c728?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1346&q=80" alt="Article Image">
+                <small>Business</small>
+              </nav>
+
+              <main class="__article-title">
+                <h2>The Truth About Design In 3 Minutes</h2>
+              </main>
+
+              <footer class="__article-footer">
+                <p>22 April 2020, 17:14</p>
+                <p>8 Minutes</p>
+              </footer>
+            </article>
+
+            <article class="__article-container">
+              <nav class="__article-image">
+                <img src="https://images.unsplash.com/photo-1576831371356-d6e9411ae501?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" alt="Article Image">
+                <small>Knowledge</small>
+              </nav>
+
+              <main class="__article-title">
+                <h2>How To Become Better With UI Design</h2>
+              </main>
+
+              <footer class="__article-footer">
+                <p>28 April 2020, 12:44</p>
+                <p>15 Minutes</p>
+              </footer>
+            </article>
+
+            <article class="__article-container">
+              <nav class="__article-image">
+                <img src="https://images.unsplash.com/photo-1556623695-3fdc4e29b1f5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Article Image">
+                <small>Thoughts</small>
+              </nav>
+
+              <main class="__article-title">
+                <h2>How To Become Better With UI Design</h2>
+              </main>
+
+              <footer class="__article-footer">
+                <p>5 May 2020, 21:35</p>
+                <p>5 Minutes</p>
+              </footer>
+            </article>
+          </section>
+
+          <button type="button"><i class="fas fa-spinner"></i>Load more</button>
+        </section>
+
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>My Skills</h1>
+          </nav>
+
+          <section class="__section-skills-container">
+            <div class="__skill-container">
+              <div class="__skill-header">
+                <h1>Web-Development</h1>
+              </div>
+
+              <div class="__skill-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat cupiditate, commodi nesciunt nemo, porro repellat, quod iusto harum dignissimos sit delectus. Rerum natus, id quidem at nam dignissimos? Velit, libero!</p>
+              </div>
+
+              <div class="__skill-progresses-container">
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>Javascript</p>
+                    <p>90%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="90" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>NodeJS</p>
+                    <p>30%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="30" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>Laravel</p>
+                    <p>70%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="70" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>PHP</p>
+                    <p>90%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="70" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>HTML</p>
+                    <p>95%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="95" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>SCSS</p>
+                    <p>95%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="95" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="__skill-container">
+              <div class="__skill-header">
+                <h1>Mechanical-Engineering</h1>
+              </div>
+
+              <div class="__skill-description">
+                <p>Dignissimos sit delectus. Rerum natus, id quidem at nam dignissimos? Velit, libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, assumenda, ut, rerum laboriosam minus maxime harum delectus nihil quo doloribus dolorum obcaecati quisquam illum deleniti inventore iusto neque corporis alias!</p>
+              </div>
+
+              <div class="__skill-progresses-container">
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>Inventor</p>
+                    <p>70%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="70" max="100"></progress>
+                  </div>
+                </div>
+
+                <div class="__skill-progress">
+                  <div class="__progress-header-title">
+                    <p>Drawing</p>
+                    <p>80%</p>
+                  </div>
+
+                  <div class="__progress-range">
+                    <progress value="80" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>My Education</h1>
+          </nav>
+
+          <section class="__section-educations-container">
+            <div class="__education-container">
+              <div class="__education-time">
+                <p>2013 - 2015</p>
+              </div>
+
+              <div class="__education-header">
+                <h1>Placeat dolores molestiae</h1>
+              </div>
+
+              <div class="__education-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolores molestiae maxime debitis cum ullam eaque consequatur obcaecati magnam eligendi, mollitia saepe fugit. Aspernatur eligendi omnis explicabo veritatis, architecto iure?</p>
+              </div>
+            </div>
+
+            <div class="__education-container">
+              <div class="__education-time">
+                <p>2015 - 2018</p>
+              </div>
+
+              <div class="__education-header">
+                <h1>Explicabo veritatis, architecto iure</h1>
+              </div>
+
+              <div class="__education-description">
+                <p>Explicabo veritatis, architecto iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, fugit! Inventore laudantium doloribus minima voluptatibus error, id alias. Aperiam possimus, dolor corrupti.</p>
+              </div>
+            </div>
+
+            <div class="__education-container">
+              <div class="__education-time">
+                <p>2018 - 2021</p>
+              </div>
+
+              <div class="__education-header">
+                <h1>Lorem ipsum dolor sit amet</h1>
+              </div>
+
+              <div class="__education-description">
+                <p>Obcaecati magnam eligendi, mollitia saepe fugit. Aspernatur eligendi omnis explicabo veritatis, architecto iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam maxime quaerat sequi consequatur provident quia consequuntur voluptas libero cumque a aliquam sint, et ducimus adipisci dolorum eum rem commodi reiciendis?</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="__section-container">
+          <nav class="__section-header">
+            <h1>My Work Experience</h1>
+          </nav>
+
+          <section class="__section-works-container">
+            <div class="__work-container">
+              <div class="__work-time">
+                <p>2016 - Present Time</p>
+              </div>
+
+              <div class="__work-header">
+                <h1>Web-Developer</h1>
+              </div>
+
+              <div class="__work-description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem similique libero ducimus itaque doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque ducimus provident earum consequuntur nemo nobis, tempora asperiores deleniti! Molestias ad accusantium tenetur a esse natus iste saepe tempora similique?</p>
+              </div>
+            </div>
+
+            <div class="__work-container">
+              <div class="__work-time">
+                <p>2020 - 2021</p>
+              </div>
+
+              <div class="__work-header">
+                <h1>Mechanical-Engineer</h1>
+              </div>
+
+              <div class="__work-description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem similique libero ducimus itaque doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque ducimus provident earum consequuntur nemo nobis, tempora asperiores deleniti! Molestias ad accusantium tenetur a esse natus iste saepe tempora similique?</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <section class="__section-hidden-container">
+      <div class="__hidden-modal-container">
+        <div class="__modal-close">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <div class="__modal-header-message">
+          <div class="__header-icon">
+            <i class="fad fa-check-circle"></i>
+          </div>
+
+          <div class="__header-title">
+            <h1>Successful operation!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae fugit deserunt veritatis eos error inventore aut odit, aliquam, reprehenderit, enim ea esse voluptatem ex iusto minima suscipit assumenda dolores a.</p>
+          </div>
+        </div>
+
+        <div class="__modal-buttons">
+          <button modal-response="false">Cancel</button>
+          <button modal-response="true">Confirm</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

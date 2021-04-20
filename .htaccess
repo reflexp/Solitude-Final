@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# редирект с www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+#Убираем php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+
+#Убираем ID
+RewriteRule ^Article/([0-9]+)/([0-9a-zA-Z_-]+) article.php?id=$1&name=$2 [NC,L]
+
+#RewriteRule ^Profile/([0-9]+) profile.php?id=$1 [NC,L]
+
+#ErrorDocument 404 https://www.google.kz/search?q=not+found&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjH2JD5z9vdAhWRmeAKHdjJDSoQ_AUICigB&biw=1920&bih=969
